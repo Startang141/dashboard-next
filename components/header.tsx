@@ -6,7 +6,7 @@ import Image from "next/image";
 function header() {
   return (
     <header className="bg-neutral-800 shadow-lg border-b border-neutral-900 mx-4 sm:mx-6 lg:mx-8 mt-4 mb-2 rounded-lg ">
-      <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 flex items-center justify-between">
+      <div className="mx-auto py-4 px-4 sm:px-6 flex items-center justify-between">
         <div className="flex items-center space-x-5">
           <div className="text-lg sm:text-xl lg:text-2xl font-medium text-gray-100">
             Dashboard

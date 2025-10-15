@@ -47,13 +47,13 @@ const sidebar = () => {
 
   return (
     <div
-      className={`relative z-10 transition-all ease-in-out duration-300 flex-shrink-0 ${
-        isSidebarOpen ? `w-64` : ``
+      className={`relative z-10 transition-all ease-in-out duration-300 flex-shrink-0  ${
+        isSidebarOpen ? `w-64` : `w-[86px]`
       }`}
     >
       <div className="h-full bg-neutral-800 backdrop-blur-md p-4 flex flex-col border-r border-neutral-900">
         <button>
-          <Menu onClick={() => handleSidebar()} className="ml-4" />
+          <Menu onClick={() => handleSidebar()} className="cursor-pointer" />
         </button>
         <nav className="mt-8 flex-grow">
           {sidebarItems.map((item) => {
