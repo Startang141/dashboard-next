@@ -18,6 +18,7 @@ const salesOverviewChart = () => {
       .then((res) => res.json())
       .then((data) => setSalesData(data.sales));
   }, []);
+
   return (
     <div className="bg-neutral-800 backdrop-blur-md shadow-lg rounded-xl p-4 md:p-6 border border-neutral-900 md:mx-0">
       <h2 className="text-base md:text-lg font-medium mb-4 text-gray-100 text-center md:text-left">

@@ -2,6 +2,7 @@ import React from "react";
 import { DollarSign, ShoppingBag, SquareActivity, Users } from "lucide-react";
 import StatCard from "@/components/StatCard";
 import SalesOverviewChart from "@/components/salesOverviewChart";
+import CategoryDistributionChart from "@/components/CategoryDistributionChart";
 
 const OverviewPage = () => {
   return (
@@ -13,8 +14,10 @@ const OverviewPage = () => {
           <StatCard name="Total Product" icon={ShoppingBag} value="1324" />
           <StatCard name="Stock" icon={SquareActivity} value="98" />
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8"></div>
-        <SalesOverviewChart />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <SalesOverviewChart />
+          <CategoryDistributionChart />
+        </div>
       </div>
     </div>
   );
