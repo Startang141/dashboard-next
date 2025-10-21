@@ -10,12 +10,19 @@ import {
   ShoppingBag,
   ShoppingCart,
   Users,
+  LucideIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const ICONS = {
+type SidebarItem = {
+  name: string;
+  href: string;
+  icon: keyof typeof ICONS;
+};
+
+const ICONS: { [key: string]: LucideIcon } = {
   House,
   DollarSign,
   Settings,
@@ -28,8 +35,8 @@ const ICONS = {
 };
 
 const sidebar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [sidebarItems, setSidebarItems] = useState([]);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [sidebarItems, setSidebarItems] = useState<SidebarItem[]>([]);
   const pathname = usePathname();
 
   useEffect(() => {
