@@ -9,7 +9,7 @@ import ProductPerformanceChart from "@/components/ProductPerformanceChart";
 const OverviewPage = () => {
   return (
     <div className="flex-1 overflow-auto relative z-10">
-      <div className="max-w-screen mx-auto py-4 px-4 sm:px-6 lg:px-8 ">
+      <div className="max-w-screen mx-auto p-4 sm:px-6 lg:px-8 ">
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
           <StatCard name="Total Sales" icon={DollarSign} value="$128,4" />
           <StatCard name="Total Client" icon={Users} value="111" />
@@ -20,7 +20,7 @@ const OverviewPage = () => {
           <SalesOverviewChart />
           <CategoryDistributionChart />
           <OrderDistributionChart />
-          <ProductPerformanceChart/>
+          <ProductPerformanceChart />
         </div>
       </div>
     </div>
