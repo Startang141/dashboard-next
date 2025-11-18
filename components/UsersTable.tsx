@@ -45,7 +45,7 @@ const UsersTable = () => {
     <div className="bg-neutral-800 backdrop-blur-md shadow-lg rounded-xl border border-neutral-900 p-4 md:p-6 lg:p-8">
       <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center mb-4 md:mb-6">
         <h2 className="text-lg md:text-xl font-semibold text-gray-100 text-center md:text-left">
-          Products List
+          Client List
         </h2>
         <div className="relative md:max-w-3xl w-auto">
           <input
